@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body,
+.wrapper {
+    height: 2rem;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 10;
+    padding: 20 24px;
+    box-sizing: content-box;
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    animation: rotate 6s infinite alternate;
+}
+
+.login-card1 {
+    position: relative;
+    z-index: 3;
+    width: 100px;
+    margin: 10 20px;
+    padding: 70px 70px 74px;
+    border-radius: 1.25rem;
+    background: white;
+    text-align: center;
+}
+
+.login-card1 h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+.login-card1 h3{
+    color: rgb(198, 198, 198);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.login-form{
+    width: 500px;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.login-form input{
+    width: 450px;
+    height: 50px;
+}
+.login-form buttom{
+    width: 120px;
+    height: 50px;
+    align-items: center;
+}
+
+.login-form input {
+    border: 2px solid #ebebeb;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 0 25px;
+    border-radius: 14px;
+    transition: all 0.375s;
+}
+
+.login-form input:hover{
+    border: 2px solid #800080;
+}
+
+.login-form button{
+    cursor: pointer;
+    width: 100px;
+    padding: 16px;
+    border-radius: 25px;
+    background-color: #800080;
+    color: white;
+    border: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.2px;
+}
+
+.login-form button:hover {
+    background :  #8c019e;                                                  
+   }
+   
+   .login-form p{
+        color:  #019e6a;
+        font-size:  0.9rem;
+        text-align:  left;
+        text-decoration:  none;
+        margin-bottom: 6px;
+        transition:  all 0, 3s;
+   }
+   
+   .login-form  p:hover  {
+        color: rgb(87, 0, 119);
+   }
+   
+  
