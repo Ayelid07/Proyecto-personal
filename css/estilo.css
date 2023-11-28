@@ -37,22 +37,57 @@ a{
     margin-left: 35px;
 }
 
-.nosotros2 {
-    display: flex;
-}
-.texto-imagen{
-    display: block;
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: "Rubik", sans-serif;
 }
 
-.texto-imagen #img1{
-    width: 250px;
-    margin-left: 35px;
+.page-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 750px;
+    font-family: var(--font-sans);
 }
-.texto-imagen #img2{
-    width: 350px;
-    margin-left: 35px;
+
+.card{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2x rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+    0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
-.texto-imagen #img3{
-    width: 350px;
-    margin-left: 35px;
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var (--d) * 1.5) var(--e);
+    pointer-events: none;
+}
+
+.card::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
 }
