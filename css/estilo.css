@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    background-color: cadetblue;
+}
+
+#textHeader{
+    margin-left: 31px;
+    color: grey;
+    margin-bottom: 65px;
+}
+
+a{
+    margin-left: 30px;
+    color: blue;
+    text-decoration: none;
+    
+}
+
+.nosotros1 {
+    display: flex;
+}
+
+.nosotros1 .img1{
+    width: 350px;
+    margin-left: 35px;
+}
+
+.nosotros1 .img2{
+    width: 350px;
+    margin-left: 35px;
+}
+.nosotros1 .img3{
+    width: 350px;
+    margin-left: 35px;
+}
+
+.nosotros2 {
+    display: flex;
+}
+.texto-imagen{
+    display: block;
+}
+
+.texto-imagen #img1{
+    width: 250px;
+    margin-left: 35px;
+}
+.texto-imagen #img2{
+    width: 350px;
+    margin-left: 35px;
+}
+.texto-imagen #img3{
+    width: 350px;
+    margin-left: 35px;
+}
